@@ -1,7 +1,7 @@
 import function
 from function import *
 from colorama import Style
-
+from collections.abc import Sequence
 
 def game_play():
      # Crear número secreto random
@@ -11,9 +11,22 @@ def game_play():
     # variable para guardar cantidad de rondas
     number_round = 1
     attemp_player = []   
-     
+    
+    print("\033[0;33m"+"""
+             ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+             ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+             **   *   *   *   *  *  *  *  *  *  *  *  *  *  *   **
+             **   *                                         *   **
+             **   *        ¡¡¡Bienvenido al juego!!!        *   **
+             **   *                                         *   **
+             **   *                                         *   **
+             **   *   *   *   *  *  *  *  *  *  *  *  *  *  *   **
+             ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+             ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **""")
+ 
     while True:
         
+   
      print( "\033[37;44m"+ f"========================> ROUND {number_round} <=========================")
      print(Style.RESET_ALL)
      
@@ -41,5 +54,6 @@ def game_play():
   
 
 game_play()
+
 
 
